@@ -57,3 +57,7 @@ class OrderMain(Base):
     tenant_id = Column(INTEGER(11), server_default=text("'1'"), comment='yudao多租户')
     article_number = Column(String(255, 'utf8mb4_unicode_ci'), server_default=text("''"), comment='货号')
     grounding_type = Column(TINYINT(2))
+
+    # 订单字段打印
+    def __str__(self):
+        return str(vars(self))
