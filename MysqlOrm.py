@@ -5,7 +5,7 @@ from sqlalchemy.orm import relationship, sessionmaker
 
 # 创建数据库连接引擎
 # 这里假设你的MySQL服务器运行在localhost，用户名是'root'，密码是'password'，数据库名是'mydatabase'
-engine = create_engine('mysql+mysqlconnector://root:pinyiche8888@129.211.3.200/pinyiche_pro')
+engine = create_engine('mysql+mysqlconnector://root:1@1.1.3.1/pinyiche_pro')
 
 # 创建基础模型类
 Base = declarative_base()

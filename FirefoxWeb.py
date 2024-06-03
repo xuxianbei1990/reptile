@@ -46,9 +46,9 @@ time.sleep(5)
 username_inputs = browser.find_elements(By.CLASS_NAME, 'el-input__inner')
 for username_input in username_inputs:
     if username_input.accessible_name == '请输入用户名':
-        username_input.send_keys('admin')
+        username_input.send_keys('1')
     if username_input.accessible_name == '请输入密码':
-        username_input.send_keys('AQF78kpVH1MtV3Oy')  # 替换为你的用户名
+        username_input.send_keys('1')  # 替换为你的用户名
 
 buttons = browser.find_elements(By.CLASS_NAME, 'el-button')
 for button in buttons:
