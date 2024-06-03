@@ -18,7 +18,7 @@ if os_name == 'Windows':
     service = Service(r'firefox/geckodriver.exe')
 if os_name == 'Linux':
     options.add_argument('--headless')
-    service = Service(r'geckodriver')
+    service = Service(r'./geckodriver')
 
 # 如果你的geckodriver不在PATH中，也需要指定路径
 browser = webdriver.Firefox(service=service, options=options)
@@ -48,7 +48,7 @@ for username_input in username_inputs:
     if username_input.accessible_name == '请输入用户名':
         username_input.send_keys('admin')
     if username_input.accessible_name == '请输入密码':
-        username_input.send_keys('admin123')  # 替换为你的用户名
+        username_input.send_keys('AQF78kpVH1MtV3Oy')  # 替换为你的用户名
 
 buttons = browser.find_elements(By.CLASS_NAME, 'el-button')
 for button in buttons:
